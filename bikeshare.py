@@ -19,24 +19,24 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello There! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         cities = ['chicago', 'new york city', 'washington']
-        city = input('Input city to analyze (Chicago, New York City, or Washington): ').lower()
+        city = input('Input city you would like to analyze (Chicago, New York City, or Washington): ').lower()
         if city in cities:
             print('\n   Great! We will take a look at {}.'.format(city))
             break
 
         else:
-            print('Sorry, that is not a valid city. Please try again')
+            print('Sorry, that is not a valid city. Please try again.')
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
         months = ['All', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         month = input('Input the month to analyze (ex. January, February, etc., or All): ')
         if month in months:
-            print('\n   We will take a look at {}.'.format(month))
+            print('\n   We will take a closer look at {}.'.format(month))
             break
 
         else:
@@ -102,7 +102,7 @@ def time_stats(df):
         months = ['All', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         common_month = months[common_month - 1]
 
-        print('The most popular month to travel is: {}'.format(common_month))
+        print('The most popular month to travel is: {} isnt that just neat!'.format(common_month))
 
     # TO DO: display the most common day of week
     if day == 'All':
@@ -128,7 +128,7 @@ def station_stats(df):
 
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
-    print('The most commonly used start station is: {}'.format(common_start_station))
+    print('The most commonly used start station is: {} how cool is that!'.format(common_start_station))
 
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].mode[0]
