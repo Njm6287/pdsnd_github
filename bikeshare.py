@@ -36,7 +36,7 @@ def get_filters():
         months = ['All', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         month = input('Input the month to analyze (ex. January, February, etc., or All): ')
         if month in months:
-            print('\n   We will take a look at {}.'.format(month))
+            print('\n   We will take a closer look at {}.'.format(month))
             break
 
         else:
@@ -102,7 +102,7 @@ def time_stats(df):
         months = ['All', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         common_month = months[common_month - 1]
 
-        print('The most popular month to travel is: {}'.format(common_month))
+        print('The most popular month to travel is: {} isnt that just neat!'.format(common_month))
 
     # TO DO: display the most common day of week
     if day == 'All':
@@ -128,7 +128,7 @@ def station_stats(df):
 
     # TO DO: display most commonly used start station
     common_start_station = df['Start Station'].mode()[0]
-    print('The most commonly used start station is: {}'.format(common_start_station))
+    print('The most commonly used start station is: {} how cool is that!'.format(common_start_station))
 
     # TO DO: display most commonly used end station
     common_end_station = df['End Station'].mode[0]
