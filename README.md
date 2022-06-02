@@ -7,7 +7,7 @@
 Project number 3
 
 ### Description
-Working on my version control skills
+Working on my version control skills. Using Github to do my thing.
 
 ### Files used
 Bikeshare.py
