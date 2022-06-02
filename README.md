@@ -10,7 +10,10 @@ Project number 3
 Working on my version control skills
 
 ### Files used
-Include the files used
+Bikeshare.py
+new_york_city.csv (.ignore)
+chicago.csv (.ignore)
+washington.csv (.ignore)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity
